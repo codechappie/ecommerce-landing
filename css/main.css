@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 100,300,400,600,800;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    font-family: "Hurme Geometric Sans 3 Black"; src: url("//db.onlinewebfonts.com/t/c87370f887ef7a74c1b17a214d7ea29e.eot"); src: url("//db.onlinewebfonts.com/t/c87370f887ef7a74c1b17a214d7ea29e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c87370f887ef7a74c1b17a214d7ea29e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c87370f887ef7a74c1b17a214d7ea29e.woff") format("woff"), url("//db.onlinewebfonts.com/t/c87370f887ef7a74c1b17a214d7ea29e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c87370f887ef7a74c1b17a214d7ea29e.svg#Hurme Geometric Sans 3 Black") format("svg");
+  }
+
+*{
+    font-family: 'Product Sans';
+    outline: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+nav{
+    width: 100%;
+    background-color: #fff;
+    height: 70px;
+    position: relative;
+    z-index: 9;
+    box-shadow: 1px 1px 10px rgba(51, 51, 51, 0.11);
+}
+.nav__container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 9fr 3fr;
+    background-color: #fff;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+}
+.logo img{
+    width: 120px;
+}
+.menu{
+    justify-self: center;
+    
+}
+.menu a{
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: .8rem;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+.icons{
+    justify-self: flex-end;
+}
+.icons a{
+    margin: 0px 10px;
+}
+
+
+/*========SECTION MAIN BANNER=========*/
+
+.main__banner{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    background-color: brown;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.img__model{
+    margin-top: 5vh;
+    height: auto;
+    display: grid;
+    justify-self: right;
+}
+.main__banner img{
+    margin: 0px 20px;
+    max-width: 450px;
+    height: auto;
+    align-self: flex-end;
+}
+.main__slogan{
+    position: relative;
+    top: -100px;
+    position: relative;
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+}
+.main__slogan h6{
+    font-size: .9rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.main__slogan h1{
+    font-size: 4.4rem;
+}
+.main__slogan h2{
+    font-size: 3.2rem;
+}
+.main__slogan p{
+    font-size: 1.3rem;
+    padding: 5px;
+}
+.main__slogan button{
+    padding: 15px 20px;
+    margin-top: 10px;
+    border: 1px solid #333;
+    background-color: #000;
+    color: #fff;
+}
+
+/*DETAIL SECTION*/
+
+.detail__section{
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.detail__section .info h1{
+    font-family: "Hurme Geometric Sans 3 Black";
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+.detail__section .info p{
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    padding: 10px 20px;
+    line-height: 24px;
+    color: rgb(82, 82, 82);
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+.detail__section .info button{
+    padding: 12px 20px;
+    font-size: 14px;    
+    margin-top: 10px;
+    border: 3px solid #000;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.detail__section .info{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+/*GRID PRODUCTS*/
+
+.grid__products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 88%;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5vh;
+    grid-row-gap: 8px;
+    grid-column-gap:10px;
+}
+.grid__products > div{
+    position: relative;
+    overflow: hidden;
+}
+.grid__products img{
+    width: 100%;
+}
+.man{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.clothes{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.shoes{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.accessories{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.categori{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.woman{
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
