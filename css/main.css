@@ -73,7 +73,23 @@ nav {
 .icons a {
   margin: 0px 10px;
 }
-
+.shopping__cart{
+  position: relative;
+}
+.quantity{
+  background-color: rgb(236, 49, 49);
+  width: 20px;
+  height: 20px;
+  border-radius: 40px;
+  position: absolute;
+  right: -8px;
+  top: -15px;
+  font-size: 12px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: #fff;
+}
 /*========SECTION MAIN BANNER=========*/
 
 .main__banner {
@@ -413,6 +429,9 @@ nav {
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-shadow: rgba(0, 0, 0, 0) 1px 1px 3px;
+}
+.grid__categories .image{
+  background-position: center;
 }
 .grid__categories h1 {
   font-family: "Sofia Pro", "Poppins";
@@ -850,7 +869,50 @@ footer ul li a {
     justify-self: center;
   }
 
-
+@media screen and (max-width: 650px){
+  .grid__categories {
+    grid-template-columns: repeat(2, 1fr)!important;
+    height: 100%;
+    font-weight: 600;
+  }
+  .new__products{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    width: 100%;
+    height: 80vh;
+  }
+  .info__text__one{
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .woman__products{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 40vh;
+  }
+  .info__text__two{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .event__month{
+    height: 40vh;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .info__text__three{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .our__outfits{
+    height: 40vh;
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .info__text__four{
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+}
 
 @media screen and (max-width: 560px){
   .nav__container {
@@ -862,5 +924,66 @@ footer ul li a {
   }
   .love__mobile{
     display: none;
+  }
+  .grid__categories {
+    grid-template-columns: repeat(2, 1fr)!important;
+    height: 100vh;
+    font-weight: 600;
+  }
+  .new__products{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+  }
+  .woman__products{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 100%;
+  }
+  .event__month{
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .our__outfits{
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .info__text__two h1,
+  .info__text__three h1,
+  .info__text__four h1 {
+    font-size: 1rem;
+  }
+  .grid__categories .content button{
+    font-size: .6rem;
+    padding: 6px 14px;
+  }
+  .grid__products .card{
+    margin: 20px auto;
+  }
+  .grid__products .title{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .info__text__two h1,
+  .info__text__three h1,
+  .info__text__four h1 {
+    font-size: .8rem;
+  }
+  .grid__products .title{
+    font-size: .8rem;
+  }
+  .grid__products .price .before{
+    font-size: .8rem;
+  }
+  .grid__products .price .now{
+    font-size: .8rem;
+  }
+  .info__card {
+    margin:10px auto;
   }
 }
