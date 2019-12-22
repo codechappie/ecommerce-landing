@@ -153,7 +153,7 @@ nav {
 
 .detail__section {
   width: 90%;
-  margin: 0px auto;
+  margin: 8vh auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -426,7 +426,7 @@ nav {
   display: grid;
   width: 95%;
   height: 80vh;
-  margin: 0 auto;
+  margin: 8vh auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-shadow: rgba(0, 0, 0, 0) 1px 1px 3px;
 }
@@ -552,13 +552,16 @@ nav {
   background-size: cover;
   transition: transform 1s;
 }
+.allProducts{
+  margin-top: -30px!important;
+}
 
 /*SECTION GIFTS*/
 .gifts {
   margin: 10vh auto;
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr)!important;
 }
 .gifts .image_message {
   display: grid;
@@ -704,6 +707,31 @@ footer ul li a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media only screen and (max-width: 1024px){
+  .detail__section{
+    grid-template-columns:3fr;
+  }
+  .detail__section .image img{
+    width: 90%;
+  }
+  /* .image_message img{
+    width: 100%;
+    grid-row: 1/6 ;
+  }
+  .image_message{
+    grid-template-columns: 1fr 2fr;
+  }
+  .image_message h3{
+    grid-row: 3/4;
+  }
+  .image_message p{
+    grid-column: 2/3;
+    grid-row: 4/5;
+  } */
+  .animated__image{
+    grid-row: 1/2;
+  }
+}
 
 @media screen and (max-width: 990px){
   .grid__categories {
@@ -749,7 +777,11 @@ footer ul li a {
     grid-row: 4/5;
   }
 }
-
+@media screen and (max-width: 890px){
+  .gifts{
+    grid-template-columns: 4fr!important;
+  }
+}
 @media screen and (max-width: 768px) {
 
   /*MAIN BANNER*/
@@ -789,13 +821,33 @@ footer ul li a {
 
   .detail__section {
     width: 100%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr!important;
     justify-items: center;
     align-items: center;
     text-align: center;
   }
   .detail__section img {
-    width: 80%;
+    width: 100%;
+  }
+  .detail__section{
+    grid-template-columns: 3fr;
+  }
+  .image_message img{
+    width: 100%;
+    grid-row: 1/2 ;
+  }
+  .image_message{
+    grid-template-columns: 2fr;
+  }
+  .image_message h3{
+    grid-row: 2/3;
+  }
+  .image_message p{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .animated__image{
+    grid-row: 1/2;
   }
 
 }
@@ -968,7 +1020,7 @@ footer ul li a {
   }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
   .info__text__two h1,
   .info__text__three h1,
   .info__text__four h1 {
@@ -985,5 +1037,63 @@ footer ul li a {
   }
   .info__card {
     margin:10px auto;
+  }
+  .animated__image{
+    padding: 10px;
+  }
+  .animated__image h3{
+    font-size: 1.3rem!important;
+  }
+}
+
+@media screen and (max-height: 520px){
+  .main__slogan{
+    top: -50vh;
+  }
+    .main__banner {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 2fr 4fr;
+      background-color: brown;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background: #eeeeee;
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+  }
+  .main__banner .img__model img{
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-height: 400px){
+  .main__slogan{
+    top: -60vh;
+  }
+    .main__banner {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 2fr 4fr;
+      background-color: brown;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background: #eeeeee;
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+  }
+  .main__banner .img__model img{
+    max-width: 400px;
+  }
+  .main__slogan h1{
+    font-size: 3rem;
+  }
+  .main__slogan h2{
+    font-size: 2rem;
   }
 }
