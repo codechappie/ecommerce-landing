@@ -660,7 +660,11 @@ footer ul li a {
   justify-self: flex-end;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1200px) {
+=======
+@media screen and (max-width: 768px) {
+>>>>>>> 469334bd9b3dbafbf78e72750f1d2b6f90b63b92
   nav {
     height: 50px;
   }
