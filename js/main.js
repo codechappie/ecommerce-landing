@@ -19,15 +19,20 @@ sr.reveal('.grid__products .card',{
     origin: 'bottom',
     distance: '50px'
 });
+sr.reveal('.grid__products .allProducts',{
+    duration: 2000,
+    origin: 'bottom',
+    distance: '50px'
+});
 sr.reveal('.left__efect',{
     duration: 2000,
     origin: 'left',
-    distance: '200px'
+    distance: '0px'
 });
 sr.reveal('.right__efect',{
     duration: 2000,
     origin: 'right',
-    distance: '200px'
+    distance: '0px'
 });
 sr.reveal('.bottom__efect',{
     duration: 2000,
